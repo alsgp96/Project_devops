@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  name: deploy container
+
+  tasks:
+    - name: delete container
+      shell: docker rm -f prj
+      ignore_errors: yes
+
+    - name: delete image
+      shell: docker rmi prj
+      ignore_errors: yes
+
+    - name: create container
+      shell: docker run -d --name prj -p 8095:8080 alsgp96/prj_devops
