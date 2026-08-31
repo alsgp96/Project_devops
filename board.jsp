@@ -156,11 +156,11 @@
         conn =
             DriverManager.getConnection(
 
-                "jdbc:mariadb://prjdb.cvue06ago8n9.ap-northeast-2.rds.amazonaws.com:3306/boarddb",
+                "jdbc:mariadb://43.202.63.190:3306/boarddb",
 
                 "admin",
 
-                "password"
+                "1234"
 
             );
 
