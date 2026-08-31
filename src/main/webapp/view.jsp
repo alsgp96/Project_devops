@@ -273,15 +273,20 @@
 
             <a href="/board.jsp"
                class="cancel-button">
-
-                목록으로
+        
+                목록
 
             </a>
 
+            <a href="/delete.jsp?id=<%= id %>"
+               class="cancel-button"
+               onclick="return confirm('정말 삭제하시겠습니까?');">
+
+                삭제
+        
+            </a>
+
         </div>
-
-
-    </div>
 
 
 </section>
