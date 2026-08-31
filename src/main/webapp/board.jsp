@@ -175,9 +175,9 @@
         if (keyword != null &&
             !keyword.trim().isEmpty()) {
 
-
             sql =
-                "SELECT id, title, writer, reg_date " +
+                "SELECT ROW_NUMBER() OVER (ORDER BY id ASC) AS num, " +
+                "id, title, writer, reg_date " +
                 "FROM board " +
                 "WHERE title LIKE ? " +
                 "ORDER BY id DESC";
@@ -197,7 +197,8 @@
 
 
             sql =
-                "SELECT id, title, writer, reg_date " +
+                "SELECT ROW_NUMBER() OVER (ORDER BY id ASC) AS num, " +
+                "id, title, writer, reg_date " +
                 "FROM board " +
                 "ORDER BY id DESC";
 
