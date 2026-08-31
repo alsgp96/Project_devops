@@ -6,7 +6,7 @@
     - name: create docker image
       shell: docker build -t prj:latest .
       args:
-        chdir: /root/team1
+        chdir: /var/lib/jenkins/workspace/CI
 
     - name: change docker tag
       shell: docker tag prj:latest alsgp96/prj_devops:latest
