@@ -21,7 +21,7 @@ PreparedStatement pstmt = null;
 try {
 Class.forName("org.mariadb.jdbc.Driver");
 
-```
+
 conn = DriverManager.getConnection(url, user, password);
 
 String sql = "DELETE FROM board WHERE id = ?";
@@ -31,7 +31,7 @@ pstmt.setInt(1, Integer.parseInt(id));
 pstmt.executeUpdate();
 
 response.sendRedirect("board.jsp");
-```
+
 
 } catch (Exception e) {
 out.println("<h3>게시글 삭제 중 오류가 발생했습니다.</h3>");
