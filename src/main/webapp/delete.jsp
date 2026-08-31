@@ -12,8 +12,8 @@ return;
 }
 
 String url = "jdbc:mariadb://prjdb.cvue06ago8n9.ap-northeast-2.rds.amazonaws.com:3306/prjdb?sslMode=trust";
-String user = "RDS사용자명";
-String password = "RDS비밀번호";
+String user = "admin";
+String password = "password";
 
 Connection conn = null;
 PreparedStatement pstmt = null;
