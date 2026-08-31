@@ -65,7 +65,7 @@
         conn =
             DriverManager.getConnection(
 
-                "jdbc:mariadb://prjdb.cvue06ago8n9.ap-northeast-2.rds.amazonaws.com:3306/boarddb",
+                "jdbc:mariadb://prjdb.cvue06ago8n9.ap-northeast-2.rds.amazonaws.com:3306/prjdb?sslMode=trust",
 
                 "admin",
 
